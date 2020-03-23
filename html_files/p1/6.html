@@ -10,6 +10,23 @@
 
     <link href="../../css/video-js.css" rel="stylesheet">
     <script src="../../js/video.js"></script> 
+    <script type="text/javascript">
+      function loadVideo(){
+        var video_id = (parseInt(localStorage['participant_id']))%4;
+        video_id=video_id+1;
+        console.log(video_id);
+        var caption_type_id = (parseInt(localStorage['participant_id'])+3)%3;
+        caption_type_id=caption_type_id+1;
+        var video = document.getElementById('example_video_1');
+        video.setAttribute("src", "../../videos/2/"+caption_type_id+"/"+video_id+".mov");
+        var video = document.getElementById('first');
+        video.setAttribute("src", "../../videos/2/"+caption_type_id+"/"+video_id+".mov");
+        var video = document.getElementById('example_video_1_html5_api');
+        video.setAttribute("src", "../../videos/2/"+caption_type_id+"/"+video_id+".mov");
+      }
+   
+      
+    </script>
     
     <style type="text/css">
       .nav_page_btn {padding-top: 315px;}
@@ -20,7 +37,8 @@
     </style>
   </head>
     
-  <body>
+  <body onload="loadVideo()">
+
     <div class="container2" style="padding-top: 10px; width: 100%">
       <div align="center" class="text-align:center">
         <h2 align="right"></h2>
@@ -30,69 +48,35 @@
       </div>
 
         <div id="reference_space" align="center">
-          <p>These Video No 19,20 Contains Captions With No Punctuation and No Speaker Indicator</p>
-          <p>These Video No 21,22 Contains Captions Punctuation and Speaker Indicator</p>
+          
         </div>
 
         <div style="text-align:center;width:90%;margin: auto;">
           
           <div style="height: 500px; margin:auto;">
-              <div style="float:left; text-align:center;width:22%;margin-right:3%">
+              <div style="margin-left:auto; margin-right:auto;text-align:center;width:50%;">
                 <div> 
-                   <h2>Video #19</h2>
+                   <h2>Video #6</h2>
                 </div>
                 <div style="margin: auto;"> 
                   <video id="example_video_1" class="video-js vjs-default-skin"
                     controls preload="auto" width="100%" height="400" scale="tofit"
                     data-setup='{"example_option":true}'>
-                    <source src="../../videos/6/1.mov" type='video/mp4'/>
+                    <source id="first" type='video/mp4'/>
                   </video>
                 </div>
               </div>
-              <div style="float:left; text-align:center;width:22%;margin-right:3%">
-                <div> 
-                   <h2>Video #20</h2>
-                </div>
-                <div style="margin: auto;"> 
-                  <video id="example_video_1" class="video-js vjs-default-skin"
-                    controls preload="auto" width="100%" height="400" scale="tofit"
-                    data-setup='{"example_option":true}'>
-                    <source src="../../videos/6/2.mov" type='video/mp4'/>
-                  </video>
-                </div>
-              </div>
-              <div style="float:left; text-align:center;width:22%;margin-right:3%">
-                <div> 
-                   <h2>Video #21</h2>
-                </div>
-                <div style="margin: auto;"> 
-                  <video id="example_video_1" class="video-js vjs-default-skin"
-                    controls preload="auto" width="100%" height="400" scale="tofit"
-                    data-setup='{"example_option":true}'>
-                    <source src="../../videos/6/3.mov" type='video/mp4'/>
-                  </video>
-                </div>
-              </div>
-              <div style="float:left; text-align:center;width:22%;margin-right:3%">
-                <div> 
-                   <h2>Video #22</h2>
-                </div>
-                <div style="margin: auto;"> 
-                  <video id="example_video_1" class="video-js vjs-default-skin"
-                    controls preload="auto" width="100%" height="400" scale="tofit"
-                    data-setup='{"example_option":true}'>
-                    <source src="../../videos/6/4.mov" type='video/mp4'/>
-                  </video>
-                </div>
-              </div>
+              
+              
           </div>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfMifr6AOmOZGCu3i0A3p956mgQOT2YmEuy3Iw12eX_8jwIwA/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
+        
       
       <hr class="space">
+      <a style="margin-left: 10%; float:left;" class="btn" href="5.html">Prev</a>
       
-
-      <a style="margin-right: 10%; float:right" class="btn" href="7.html">Next</a> <!--<a style="margin-right: 10%; float:right" class="btn" href="{{next_page}}">Next</a>-->
-        <a style="margin-left: 10%; float:left;" class="btn" href="5.html">Prev</a>
+      <a style="margin-right: 10%; float:right;" class="btn" href="7.html">Next</a> <!--<a style="margin-right: 10%; float:right" class="btn" href="{{next_page}}">Next</a>-->
       
   </body>
 </html>
