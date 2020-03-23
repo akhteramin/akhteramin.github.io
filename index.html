@@ -8,12 +8,24 @@
     <link rel="stylesheet" href="../../css/blueprint/print.css" type="text/css" media="print">
     <link rel="stylesheet" href="../../css/other.css" type="text/css">
     <link rel="stylesheet" href="../../css/other.css" type="text/css">
+    <script>
+      function setInputValue(){
+        localStorage.setItem("participant_id", "1");
+        if(!isNaN(document.getElementById("participant_id").value)){
+          console.log(document.getElementById("participant_id").value);
+          // Store
+          localStorage.setItem("participant_id", document.getElementById("participant_id").value);
+        }
+        
+      }
+    </script>
   </head>
     
   <body>
-    <div class="container2" style="padding-top: 10px; width: 90%">
-        <h1 align="center">Welcome!</h1>
-        <h2 align="center" style="margin-top: 10%;"><a href="html_files/p1/1.html">Click here to begin the Experiment.</a></h2>
+    <div class="container2" align="center"  style="padding-top: 10px; width: 90%">
+        <h1 align="center">Welcome! Please Enter Participant's ID here:</h1>
+        <input type="number" id="participant_id" value="1">
+        <h2 align="center" style="margin-top: 10%;"><a href="html_files/p1/1.html" onclick="setInputValue();">Click here to begin the Experiment.</a></h2>
     </div>  
   </body>
 </html>
