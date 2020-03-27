@@ -12,7 +12,7 @@
     <script src="../../js/video.js"></script> 
     <script type="text/javascript">
       function loadVideo(){
-        var video_id = (parseInt(localStorage['participant_id']))%4;
+        var video_id = (parseInt(localStorage['participant_id']))%3;
         video_id=video_id+1;
         console.log(video_id);
         var caption_type_id = (parseInt(localStorage['participant_id'])+3)%3;
