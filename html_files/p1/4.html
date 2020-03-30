@@ -12,10 +12,10 @@
     <script src="../../js/video.js"></script> 
     <script type="text/javascript">
       function loadVideo(){
-        var video_id = (parseInt(localStorage['participant_id']))%3;
-        video_id=video_id+1;
+       var video_id = (parseInt(localStorage['participant_id']))%3;
+        video_id = video_id+1;
         console.log(video_id);
-        var caption_type_id = (parseInt(localStorage['participant_id'])+1)%3;
+        var caption_type_id = (parseInt(localStorage['participant_id'])+2)%3;
         caption_type_id=caption_type_id+1;
         var video = document.getElementById('example_video_1');
         video.setAttribute("src", "../../videos/2/"+caption_type_id+"/"+video_id+".mov");
@@ -23,6 +23,8 @@
         video.setAttribute("src", "../../videos/2/"+caption_type_id+"/"+video_id+".mov");
         var video = document.getElementById('example_video_1_html5_api');
         video.setAttribute("src", "../../videos/2/"+caption_type_id+"/"+video_id+".mov");
+        console.log("version:"+caption_type_id+"video:"+video_id)
+
       }
    
       
