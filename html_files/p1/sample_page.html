@@ -11,15 +11,6 @@
     <link href="../../css/video-js.css" rel="stylesheet">
     <script src="../../js/video.js"></script> 
     <script type="text/javascript">
-      function loadVideo(){
-        
-        var video = document.getElementById('example_video_1');
-        video.setAttribute("src", "../../videos/sample/1.mov");
-        var video = document.getElementById('first');
-        video.setAttribute("src", "../../videos/sample/1.mov");
-        var video = document.getElementById('example_video_1_html5_api');
-        video.setAttribute("src", "../../videos/sample/1.mov");
-      }
    
       // function checkForm(){
       //   var iframe = document.getElementById("googleForm");
@@ -43,7 +34,7 @@
     </style>
   </head>
     
-  <body onload="loadVideo()">
+  <body>
 
     <div class="container2" style="padding-top: 10px; width: 100%">
       <div align="center" class="text-align:center">
@@ -68,7 +59,7 @@
                   <video id="example_video_1" class="video-js vjs-default-skin"
                     controls preload="auto" width="100%" height="400" scale="tofit"
                     data-setup='{"example_option":true}'>
-                    <source id="first" type='video/mp4'/>
+                    <source id="first" type='video/mp4' src="../../videos/sample/1.mov"/>
                   </video>
                 </div>
               </div>
