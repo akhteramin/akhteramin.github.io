@@ -24,6 +24,20 @@
         var video = document.getElementById('example_video_1_html5_api');
         video.setAttribute("src", "../../videos/2/"+caption_type_id+"/"+video_id+".mov");
         console.log("version:"+caption_type_id+"video:"+video_id)
+        var iframe = document.getElementById('iframe_1');
+
+
+        if(caption_type_id==1){
+          
+          iframe.setAttribute("src","https://docs.google.com/forms/d/e/1FAIpQLScji348JoYohMu9lYIozbOqWAspEIXv15uc2wRPxq2S-hs15A/viewform?embedded=true");
+         
+        }
+        else if(caption_type_id==2){
+          iframe.setAttribute("src","https://docs.google.com/forms/d/e/1FAIpQLSe0eOCzbHl5SzxI8g1RJVDxk0rddl6SViIubUQc4Kor9SMMIA/viewform?embedded=true");
+        }
+        else{
+          iframe.setAttribute("src","https://docs.google.com/forms/d/e/1FAIpQLSd412IXS0lxGKks4dUozVCnelbMoJPvB5n0D6gDPa787WgVgQ/viewform?embedded=true");
+        }
 
       }
    
@@ -71,7 +85,7 @@
               
               
           </div>
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfMifr6AOmOZGCu3i0A3p956mgQOT2YmEuy3Iw12eX_8jwIwA/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          <iframe id="iframe_1" src="https://docs.google.com/forms/d/e/1FAIpQLSfMifr6AOmOZGCu3i0A3p956mgQOT2YmEuy3Iw12eX_8jwIwA/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
         
       

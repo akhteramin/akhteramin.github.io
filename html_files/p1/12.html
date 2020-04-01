@@ -35,6 +35,44 @@
         var video = document.getElementById('example_video_1_html5_api');
         video.setAttribute("src", "../../videos/3/"+caption_type_id+"/"+video_id+".mov");
         console.log("version: "+caption_type_id+" video: "+video_id);
+
+        var iframe = document.getElementById('iframe_1');
+
+        if(caption_type_id==1){
+          
+          iframe.setAttribute("src","https://docs.google.com/forms/d/e/1FAIpQLSdLDvfgfNlX_ay9v9cajbTUtc-Ug0VYzMgNyTAiR_RGlay8rw/viewform?embedded=true");
+         
+        }
+        else if(caption_type_id==2){
+          iframe.setAttribute("src","https://docs.google.com/forms/d/e/1FAIpQLSet9uX1ENr3gV7YC1xIV0R24FJtGd9CzOzOg6UYOR1AG6i-7w/viewform?embedded=true");
+        }
+        else if(caption_type_id==3){
+          iframe.setAttribute("src","https://docs.google.com/forms/d/e/1FAIpQLSerrrt4e5cbdWa3KxQYDn7G99v7785u8XtcO6ev5kGCTTqJGg/viewform?embedded=true");
+        }
+        else if(caption_type_id==4){
+          iframe.setAttribute("src","https://docs.google.com/forms/d/e/1FAIpQLSc_XrkE5dS2V8aCBOg7VbFeM6twNVFE53IJhOD94BfJMbmmpg/viewform?embedded=true");
+
+        }
+        else if(caption_type_id==5){
+          iframe.setAttribute("src","https://docs.google.com/forms/d/e/1FAIpQLSfax0s2uZHCnqS-6bI4UYF2NsOyVkzXDDdpdtLoydTXtMEoRQ/viewform?embedded=true");
+
+        }
+        else if(caption_type_id==6){
+          iframe.setAttribute("src","https://docs.google.com/forms/d/e/1FAIpQLSenjoSIZVoWwD8-bLoYnQOrls7OOSe2bFJVroJlO8BgYL70Tw/viewform?embedded=true");
+
+        }
+        else if(caption_type_id==7){
+          iframe.setAttribute("src","https://docs.google.com/forms/d/e/1FAIpQLScTjNqYQVxW5YBIA-aN8FK5lmDE1ShimbWoLamA5ALnEVAITg/viewform?embedded=true");
+
+        }
+        else if(caption_type_id==8){
+          iframe.setAttribute("src","https://docs.google.com/forms/d/e/1FAIpQLSdEmRV7mQyGqlgnmNHm0_ZE_rC7XQaR0fvsg-zYgMhmnWbnuw/viewform?embedded=true");
+
+        }
+        else{
+          iframe.setAttribute("src","https://docs.google.com/forms/d/e/1FAIpQLSdduOOYLG2BwTf2ntWnmSsKjn8Ul_pRWWeqPJpvjajNJICOMw/viewform?embedded=true");
+
+        }
       }
    
       
@@ -81,7 +119,7 @@
               
               
           </div>
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfMifr6AOmOZGCu3i0A3p956mgQOT2YmEuy3Iw12eX_8jwIwA/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          <iframe id="iframe_1" src="https://docs.google.com/forms/d/e/1FAIpQLSfMifr6AOmOZGCu3i0A3p956mgQOT2YmEuy3Iw12eX_8jwIwA/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
         
       
