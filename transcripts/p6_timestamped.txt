@@ -1,4 +1,0 @@
-0.66	6.52	Of course we will be opening an application that will allow students to apply online as well.
-7.15	17.5	So we will need to also take the document that the director of each team fills out - and send it to our web developers so they can build an online forum.
-18.2	28.07	The forum will be similar to the way it has been in the past - it will ask for the student's resume, education information, and some background information.
-28.67	37.62	Based on what the student selects in the forum - it will be sent to whichever team that closely matches the student's qualifications.
